@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2056E52B59A97ACB4FD32E4E /* Pods_NetEaseMoive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */; };
+		D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90721EA1C09D92E0091170A /* AppDelegate.swift */; };
+		D90721ED1C09D92E0091170A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90721EC1C09D92E0091170A /* ViewController.swift */; };
+		D90721F01C09D92E0091170A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90721EE1C09D92E0091170A /* Main.storyboard */; };
+		D90721F21C09D92E0091170A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90721F11C09D92E0091170A /* Assets.xcassets */; };
+		D90721F51C09D92E0091170A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90721F31C09D92E0091170A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		99B9FCE187A5AFF071275A92 /* Pods-NetEaseMoive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseMoive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive.debug.xcconfig"; sourceTree = "<group>"; };
+		D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetEaseMoive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90721E71C09D92E0091170A /* NetEaseMoive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseMoive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90721EA1C09D92E0091170A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D90721EC1C09D92E0091170A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D90721EF1C09D92E0091170A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D90721F11C09D92E0091170A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D90721F41C09D92E0091170A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D90721F61C09D92E0091170A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDDCCC3B7EC21D55E8B2E91 /* Pods-NetEaseMoive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseMoive.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90721E41C09D92E0091170A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2056E52B59A97ACB4FD32E4E /* Pods_NetEaseMoive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B5A305C0A6CA40D32A24AC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5796C1BD5096532012A24459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99B9FCE187A5AFF071275A92 /* Pods-NetEaseMoive.debug.xcconfig */,
+				FBDDCCC3B7EC21D55E8B2E91 /* Pods-NetEaseMoive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D90721DE1C09D92E0091170A = {
+			isa = PBXGroup;
+			children = (
+				D90721E91C09D92E0091170A /* NetEaseMoive */,
+				D90721E81C09D92E0091170A /* Products */,
+				5796C1BD5096532012A24459 /* Pods */,
+				4B5A305C0A6CA40D32A24AC4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D90721E81C09D92E0091170A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90721E71C09D92E0091170A /* NetEaseMoive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90721E91C09D92E0091170A /* NetEaseMoive */ = {
+			isa = PBXGroup;
+			children = (
+				D90721EA1C09D92E0091170A /* AppDelegate.swift */,
+				D90721EC1C09D92E0091170A /* ViewController.swift */,
+				D90721EE1C09D92E0091170A /* Main.storyboard */,
+				D90721F11C09D92E0091170A /* Assets.xcassets */,
+				D90721F31C09D92E0091170A /* LaunchScreen.storyboard */,
+				D90721F61C09D92E0091170A /* Info.plist */,
+			);
+			path = NetEaseMoive;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90721E61C09D92E0091170A /* NetEaseMoive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90721F91C09D92E0091170A /* Build configuration list for PBXNativeTarget "NetEaseMoive" */;
+			buildPhases = (
+				2CCE1BE5C8ABF8600710BE21 /* Check Pods Manifest.lock */,
+				D90721E31C09D92E0091170A /* Sources */,
+				D90721E41C09D92E0091170A /* Frameworks */,
+				D90721E51C09D92E0091170A /* Resources */,
+				48805357C82E5A6AD5D1E98B /* Embed Pods Frameworks */,
+				5AE309697B278A6C063BAE4B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetEaseMoive;
+			productName = NetEaseMoive;
+			productReference = D90721E71C09D92E0091170A /* NetEaseMoive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90721DF1C09D92E0091170A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = swiftMe;
+				TargetAttributes = {
+					D90721E61C09D92E0091170A = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = D90721E21C09D92E0091170A /* Build configuration list for PBXProject "NetEaseMoive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D90721DE1C09D92E0091170A;
+			productRefGroup = D90721E81C09D92E0091170A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90721E61C09D92E0091170A /* NetEaseMoive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90721E51C09D92E0091170A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90721F51C09D92E0091170A /* LaunchScreen.storyboard in Resources */,
+				D90721F21C09D92E0091170A /* Assets.xcassets in Resources */,
+				D90721F01C09D92E0091170A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CCE1BE5C8ABF8600710BE21 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48805357C82E5A6AD5D1E98B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AE309697B278A6C063BAE4B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90721E31C09D92E0091170A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90721ED1C09D92E0091170A /* ViewController.swift in Sources */,
+				D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D90721EE1C09D92E0091170A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90721EF1C09D92E0091170A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D90721F31C09D92E0091170A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90721F41C09D92E0091170A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D90721F71C09D92E0091170A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90721F81C09D92E0091170A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90721FA1C09D92E0091170A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99B9FCE187A5AFF071275A92 /* Pods-NetEaseMoive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NetEaseMoive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SE.NetEaseMoive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D90721FB1C09D92E0091170A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDDCCC3B7EC21D55E8B2E91 /* Pods-NetEaseMoive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NetEaseMoive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SE.NetEaseMoive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90721E21C09D92E0091170A /* Build configuration list for PBXProject "NetEaseMoive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90721F71C09D92E0091170A /* Debug */,
+				D90721F81C09D92E0091170A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90721F91C09D92E0091170A /* Build configuration list for PBXNativeTarget "NetEaseMoive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90721FA1C09D92E0091170A /* Debug */,
+				D90721FB1C09D92E0091170A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D90721DF1C09D92E0091170A /* Project object */;
+}
