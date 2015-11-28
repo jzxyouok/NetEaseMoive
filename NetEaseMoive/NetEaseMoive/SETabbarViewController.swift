@@ -14,10 +14,11 @@ class SETabbarViewController: UITabBarController,UITabBarControllerDelegate{
         super.viewDidLoad()
         self.selectedIndex = 0
         
+        
         //电影
         let movieVC = MovieViewController()
         movieVC.title = "电影"
-//            movieVC.tabBarItem = UITabBarItem(title:"电影", image: nil, selectedImage: nil)
+//      movieVC.tabBarItem = UITabBarItem(title:"电影", image: nil, selectedImage: nil)
         let movieNav = SENavViewController(rootViewController: movieVC)
     
         //剧场
