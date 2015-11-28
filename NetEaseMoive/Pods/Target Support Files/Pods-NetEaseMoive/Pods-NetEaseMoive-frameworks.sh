@@ -85,11 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-NetEaseMoive/Alamofire.framework"
+  install_framework "Pods-NetEaseMoive/AlamofireObjectMapper.framework"
   install_framework "Pods-NetEaseMoive/Kingfisher.framework"
+  install_framework "Pods-NetEaseMoive/ObjectMapper.framework"
   install_framework "Pods-NetEaseMoive/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-NetEaseMoive/Alamofire.framework"
+  install_framework "Pods-NetEaseMoive/AlamofireObjectMapper.framework"
   install_framework "Pods-NetEaseMoive/Kingfisher.framework"
+  install_framework "Pods-NetEaseMoive/ObjectMapper.framework"
   install_framework "Pods-NetEaseMoive/SwiftyJSON.framework"
 fi
