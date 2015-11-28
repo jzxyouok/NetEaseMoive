@@ -24,7 +24,7 @@ class SETabbarViewController: UITabBarController,UITabBarControllerDelegate{
         //剧场
         let cinemaVC = CinemaViewController()
         cinemaVC.title = "剧场"
-//            cinemaVC.tabBarItem = UITabBarItem(title:"剧场", image: nil,   selectedImage: nil)
+//      cinemaVC.tabBarItem = UITabBarItem(title:"剧场", image: nil,   selectedImage: nil)
         let cinemaNav = SENavViewController(rootViewController: cinemaVC)
         
         //发现
