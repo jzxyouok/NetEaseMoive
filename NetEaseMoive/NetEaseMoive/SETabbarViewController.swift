@@ -16,22 +16,26 @@ class SETabbarViewController: UITabBarController,UITabBarControllerDelegate{
         
         //电影
         let movieVC = MovieViewController()
-            movieVC.tabBarItem = UITabBarItem(title:"电影", image: nil, selectedImage: nil)
+        movieVC.title = "电影"
+//            movieVC.tabBarItem = UITabBarItem(title:"电影", image: nil, selectedImage: nil)
         let movieNav = SENavViewController(rootViewController: movieVC)
     
         //剧场
         let cinemaVC = CinemaViewController()
-            cinemaVC.tabBarItem = UITabBarItem(title:"剧场", image: nil,   selectedImage: nil)
+        cinemaVC.title = "剧场"
+//            cinemaVC.tabBarItem = UITabBarItem(title:"剧场", image: nil,   selectedImage: nil)
         let cinemaNav = SENavViewController(rootViewController: cinemaVC)
         
         //发现
         let discoveryVC = DiscoveryViewController()
-            discoveryVC.tabBarItem = UITabBarItem(title:"发现", image: nil, selectedImage: nil)
+        discoveryVC.title = "发现"
+//            discoveryVC.tabBarItem = UITabBarItem(title:"发现", image: nil, selectedImage: nil)
         let discoveryNav = SENavViewController(rootViewController: discoveryVC)
         
         //设置
         let settingVC = SettingViewController()
-            settingVC.tabBarItem = UITabBarItem(title:"我的", image: nil, selectedImage: nil)
+        settingVC.title = "我的"
+//            settingVC.tabBarItem = UITabBarItem(title:"我的", image: nil, selectedImage: nil)
         let settingNav = SENavViewController(rootViewController: settingVC)
     
          self.viewControllers = [movieNav,cinemaNav,discoveryNav,settingNav]
