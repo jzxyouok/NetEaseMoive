@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB73B7C1C0A130E00BEC758 /* SECinemaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB73B7B1C0A130E00BEC758 /* SECinemaModel.swift */; };
+		1CB73B7F1C0A135600BEC758 /* SECinemaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB73B7D1C0A135600BEC758 /* SECinemaCell.swift */; };
+		1CB73B801C0A135600BEC758 /* SECinemaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB73B7E1C0A135600BEC758 /* SECinemaCell.xib */; };
 		2056E52B59A97ACB4FD32E4E /* Pods_NetEaseMoive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */; };
 		D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90721EA1C09D92E0091170A /* AppDelegate.swift */; };
 		D90721F21C09D92E0091170A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90721F11C09D92E0091170A /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CB73B7B1C0A130E00BEC758 /* SECinemaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SECinemaModel.swift; path = NetEaseMoive/Cinema/Controller/SECinemaModel.swift; sourceTree = SOURCE_ROOT; };
+		1CB73B7D1C0A135600BEC758 /* SECinemaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SECinemaCell.swift; path = NetEaseMoive/Cinema/SECinemaCell.swift; sourceTree = SOURCE_ROOT; };
+		1CB73B7E1C0A135600BEC758 /* SECinemaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SECinemaCell.xib; path = NetEaseMoive/Cinema/SECinemaCell.xib; sourceTree = SOURCE_ROOT; };
 		99B9FCE187A5AFF071275A92 /* Pods-NetEaseMoive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseMoive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive.debug.xcconfig"; sourceTree = "<group>"; };
 		D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetEaseMoive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90721E71C09D92E0091170A /* NetEaseMoive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseMoive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +135,7 @@
 		D929E3AE1C09E9F400B43B82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1CB73B7B1C0A130E00BEC758 /* SECinemaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +143,8 @@
 		D929E3AF1C09E9F400B43B82 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1CB73B7D1C0A135600BEC758 /* SECinemaCell.swift */,
+				1CB73B7E1C0A135600BEC758 /* SECinemaCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +333,7 @@
 			files = (
 				D929E3CD1C09EAB300B43B82 /* SettingViewController.xib in Resources */,
 				D929E3C11C09EA6600B43B82 /* CinemaViewController.xib in Resources */,
+				1CB73B801C0A135600BEC758 /* SECinemaCell.xib in Resources */,
 				D90721F21C09D92E0091170A /* Assets.xcassets in Resources */,
 				D929E3C91C09EA9F00B43B82 /* MovieViewController.xib in Resources */,
 				D929E3C51C09EA7C00B43B82 /* DiscoveryViewController.xib in Resources */,
@@ -386,9 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D929E3CC1C09EAB300B43B82 /* SettingViewController.swift in Sources */,
+				1CB73B7F1C0A135600BEC758 /* SECinemaCell.swift in Sources */,
 				D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */,
 				D929E3CF1C09EB9D00B43B82 /* SETabbarViewController.swift in Sources */,
 				D929E3C41C09EA7C00B43B82 /* DiscoveryViewController.swift in Sources */,
+				1CB73B7C1C0A130E00BEC758 /* SECinemaModel.swift in Sources */,
 				D929E3C01C09EA6600B43B82 /* CinemaViewController.swift in Sources */,
 				D929E3C81C09EA9F00B43B82 /* MovieViewController.swift in Sources */,
 				D929E3D21C09ED8A00B43B82 /* SENavViewController.swift in Sources */,
