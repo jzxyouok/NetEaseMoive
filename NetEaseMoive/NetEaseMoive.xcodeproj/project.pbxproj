@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		2056E52B59A97ACB4FD32E4E /* Pods_NetEaseMoive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */; };
 		D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90721EA1C09D92E0091170A /* AppDelegate.swift */; };
-		D90721ED1C09D92E0091170A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90721EC1C09D92E0091170A /* ViewController.swift */; };
-		D90721F01C09D92E0091170A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90721EE1C09D92E0091170A /* Main.storyboard */; };
 		D90721F21C09D92E0091170A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90721F11C09D92E0091170A /* Assets.xcassets */; };
-		D90721F51C09D92E0091170A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90721F31C09D92E0091170A /* LaunchScreen.storyboard */; };
+		D929E3C01C09EA6600B43B82 /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3BE1C09EA6600B43B82 /* CinemaViewController.swift */; };
+		D929E3C11C09EA6600B43B82 /* CinemaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929E3BF1C09EA6600B43B82 /* CinemaViewController.xib */; };
+		D929E3C41C09EA7C00B43B82 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3C21C09EA7C00B43B82 /* DiscoveryViewController.swift */; };
+		D929E3C51C09EA7C00B43B82 /* DiscoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929E3C31C09EA7C00B43B82 /* DiscoveryViewController.xib */; };
+		D929E3C81C09EA9F00B43B82 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3C61C09EA9F00B43B82 /* MovieViewController.swift */; };
+		D929E3C91C09EA9F00B43B82 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929E3C71C09EA9F00B43B82 /* MovieViewController.xib */; };
+		D929E3CC1C09EAB300B43B82 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3CA1C09EAB300B43B82 /* SettingViewController.swift */; };
+		D929E3CD1C09EAB300B43B82 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D929E3CB1C09EAB300B43B82 /* SettingViewController.xib */; };
+		D929E3CF1C09EB9D00B43B82 /* SETabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3CE1C09EB9D00B43B82 /* SETabbarViewController.swift */; };
+		D929E3D21C09ED8A00B43B82 /* SENavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3D11C09ED8A00B43B82 /* SENavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +27,18 @@
 		D2FE29AD3F551A4518D021EF /* Pods_NetEaseMoive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetEaseMoive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90721E71C09D92E0091170A /* NetEaseMoive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseMoive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90721EA1C09D92E0091170A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D90721EC1C09D92E0091170A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D90721EF1C09D92E0091170A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D90721F11C09D92E0091170A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D90721F41C09D92E0091170A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90721F61C09D92E0091170A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D929E3BE1C09EA6600B43B82 /* CinemaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CinemaViewController.swift; sourceTree = "<group>"; };
+		D929E3BF1C09EA6600B43B82 /* CinemaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CinemaViewController.xib; sourceTree = "<group>"; };
+		D929E3C21C09EA7C00B43B82 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		D929E3C31C09EA7C00B43B82 /* DiscoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoveryViewController.xib; sourceTree = "<group>"; };
+		D929E3C61C09EA9F00B43B82 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D929E3C71C09EA9F00B43B82 /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		D929E3CA1C09EAB300B43B82 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D929E3CB1C09EAB300B43B82 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		D929E3CE1C09EB9D00B43B82 /* SETabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SETabbarViewController.swift; sourceTree = "<group>"; };
+		D929E3D11C09ED8A00B43B82 /* SENavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SENavViewController.swift; sourceTree = "<group>"; };
 		FBDDCCC3B7EC21D55E8B2E91 /* Pods-NetEaseMoive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseMoive.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,14 +92,173 @@
 		D90721E91C09D92E0091170A /* NetEaseMoive */ = {
 			isa = PBXGroup;
 			children = (
-				D90721EA1C09D92E0091170A /* AppDelegate.swift */,
-				D90721EC1C09D92E0091170A /* ViewController.swift */,
-				D90721EE1C09D92E0091170A /* Main.storyboard */,
+				D929E3D01C09ED6B00B43B82 /* Base */,
+				D929E3B51C09E9F400B43B82 /* Movie */,
+				D929E3AC1C09E9F400B43B82 /* Cinema */,
+				D929E3B01C09E9F400B43B82 /* Discovery */,
+				D929E3B91C09E9F400B43B82 /* Setting */,
+				D929E3BD1C09E9F400B43B82 /* Vender */,
+				D929E3B41C09E9F400B43B82 /* Helper */,
 				D90721F11C09D92E0091170A /* Assets.xcassets */,
-				D90721F31C09D92E0091170A /* LaunchScreen.storyboard */,
+				D929E3CE1C09EB9D00B43B82 /* SETabbarViewController.swift */,
+				D90721EA1C09D92E0091170A /* AppDelegate.swift */,
 				D90721F61C09D92E0091170A /* Info.plist */,
 			);
 			path = NetEaseMoive;
+			sourceTree = "<group>";
+		};
+		D929E3AC1C09E9F400B43B82 /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3AD1C09E9F400B43B82 /* Controller */,
+				D929E3AE1C09E9F400B43B82 /* Model */,
+				D929E3AF1C09E9F400B43B82 /* View */,
+			);
+			path = Cinema;
+			sourceTree = "<group>";
+		};
+		D929E3AD1C09E9F400B43B82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3BE1C09EA6600B43B82 /* CinemaViewController.swift */,
+				D929E3BF1C09EA6600B43B82 /* CinemaViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D929E3AE1C09E9F400B43B82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929E3AF1C09E9F400B43B82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929E3B01C09E9F400B43B82 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3B11C09E9F400B43B82 /* Controller */,
+				D929E3B21C09E9F400B43B82 /* Model */,
+				D929E3B31C09E9F400B43B82 /* View */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		D929E3B11C09E9F400B43B82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3C21C09EA7C00B43B82 /* DiscoveryViewController.swift */,
+				D929E3C31C09EA7C00B43B82 /* DiscoveryViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D929E3B21C09E9F400B43B82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929E3B31C09E9F400B43B82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929E3B41C09E9F400B43B82 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D929E3B51C09E9F400B43B82 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3B61C09E9F400B43B82 /* Controller */,
+				D929E3B71C09E9F400B43B82 /* Model */,
+				D929E3B81C09E9F400B43B82 /* View */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		D929E3B61C09E9F400B43B82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3C61C09EA9F00B43B82 /* MovieViewController.swift */,
+				D929E3C71C09EA9F00B43B82 /* MovieViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D929E3B71C09E9F400B43B82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929E3B81C09E9F400B43B82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929E3B91C09E9F400B43B82 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3BA1C09E9F400B43B82 /* Controller */,
+				D929E3BB1C09E9F400B43B82 /* Model */,
+				D929E3BC1C09E9F400B43B82 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D929E3BA1C09E9F400B43B82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3CA1C09EAB300B43B82 /* SettingViewController.swift */,
+				D929E3CB1C09EAB300B43B82 /* SettingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D929E3BB1C09E9F400B43B82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D929E3BC1C09E9F400B43B82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D929E3BD1C09E9F400B43B82 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		D929E3D01C09ED6B00B43B82 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D929E3D11C09ED8A00B43B82 /* SENavViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +322,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D90721F51C09D92E0091170A /* LaunchScreen.storyboard in Resources */,
+				D929E3CD1C09EAB300B43B82 /* SettingViewController.xib in Resources */,
+				D929E3C11C09EA6600B43B82 /* CinemaViewController.xib in Resources */,
 				D90721F21C09D92E0091170A /* Assets.xcassets in Resources */,
-				D90721F01C09D92E0091170A /* Main.storyboard in Resources */,
+				D929E3C91C09EA9F00B43B82 /* MovieViewController.xib in Resources */,
+				D929E3C51C09EA7C00B43B82 /* DiscoveryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,31 +385,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D90721ED1C09D92E0091170A /* ViewController.swift in Sources */,
+				D929E3CC1C09EAB300B43B82 /* SettingViewController.swift in Sources */,
 				D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */,
+				D929E3CF1C09EB9D00B43B82 /* SETabbarViewController.swift in Sources */,
+				D929E3C41C09EA7C00B43B82 /* DiscoveryViewController.swift in Sources */,
+				D929E3C01C09EA6600B43B82 /* CinemaViewController.swift in Sources */,
+				D929E3C81C09EA9F00B43B82 /* MovieViewController.swift in Sources */,
+				D929E3D21C09ED8A00B43B82 /* SENavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D90721EE1C09D92E0091170A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D90721EF1C09D92E0091170A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D90721F31C09D92E0091170A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D90721F41C09D92E0091170A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D90721F71C09D92E0091170A /* Debug */ = {
@@ -323,6 +484,7 @@
 			baseConfigurationReference = 99B9FCE187A5AFF071275A92 /* Pods-NetEaseMoive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NetEaseMoive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SE.NetEaseMoive;
@@ -335,6 +497,7 @@
 			baseConfigurationReference = FBDDCCC3B7EC21D55E8B2E91 /* Pods-NetEaseMoive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = NetEaseMoive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SE.NetEaseMoive;
