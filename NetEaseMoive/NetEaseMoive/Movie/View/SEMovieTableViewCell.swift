@@ -43,7 +43,7 @@ class SEMovieTableViewCell: UITableViewCell {
         
         screeningLabel.text = model.screening
         
-        //配置Logo
+        //配置Logo  
         if let imageUrl :String = model.logoUrl {
             logoImage.kf_setImageWithURL(NSURL(string: imageUrl)!, placeholderImage: nil)
         }

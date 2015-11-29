@@ -15,7 +15,7 @@ class SETabbarViewController: UITabBarController,UITabBarControllerDelegate{
         self.selectedIndex = 0
         
         //电影
-        let movieVC = MovieViewController()
+        let movieVC = SEMoiveParentViewController()
             movieVC.tabBarItem = settingTabbarItem("tab_movie", highlightImageName: "tab_movie_highlight")
         let movieNav = SENavViewController(rootViewController: movieVC)
     
