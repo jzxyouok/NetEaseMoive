@@ -15,6 +15,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="505" height="129"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhf-rI-NFQ" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="128" width="505" height="1"/>
+                        <color key="backgroundColor" red="0.71568900346755981" green="0.71566760540008545" blue="0.71567976474761963" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Q4k-xd-iem"/>
+                        </constraints>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc0-zj-ETC">
                         <rect key="frame" x="10" y="10" width="485" height="109"/>
                         <subviews>
@@ -55,7 +62,7 @@
                                     <constraint firstAttribute="width" constant="80" id="xLj-s8-yhf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="选座购票">
+                                <state key="normal" title="选座购票" backgroundImage="orangeLittleRoundButtonBack">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -82,14 +89,18 @@
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Jhf-rI-NFQ" secondAttribute="trailing" id="E6x-Fv-oTi"/>
                     <constraint firstAttribute="bottom" secondItem="pc0-zj-ETC" secondAttribute="bottom" constant="10" id="HMg-6k-Rre"/>
                     <constraint firstItem="pc0-zj-ETC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Hef-RI-S5k"/>
                     <constraint firstItem="pc0-zj-ETC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dwT-Kg-ete"/>
                     <constraint firstAttribute="trailing" secondItem="pc0-zj-ETC" secondAttribute="trailing" constant="10" id="dyM-99-a87"/>
+                    <constraint firstAttribute="bottom" secondItem="Jhf-rI-NFQ" secondAttribute="bottom" id="lrl-FX-QnP"/>
+                    <constraint firstItem="Jhf-rI-NFQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="n1c-dE-3R0"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="gradeLabel" destination="zai-FO-eH0" id="4CH-jm-a9A"/>
+                <outlet property="lineHeight" destination="Q4k-xd-iem" id="Pak-z3-1Yn"/>
                 <outlet property="logoImage" destination="nnJ-aL-PcU" id="Fl9-jE-xvf"/>
                 <outlet property="screeningLabel" destination="pwA-xQ-jwN" id="3gn-l6-skO"/>
                 <outlet property="selectSeatBtn" destination="TJ1-Qg-wOG" id="PPR-JE-PJu"/>
@@ -99,4 +110,7 @@
             <point key="canvasLocation" x="431.5" y="116"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="orangeLittleRoundButtonBack" width="76" height="25"/>
+    </resources>
 </document>

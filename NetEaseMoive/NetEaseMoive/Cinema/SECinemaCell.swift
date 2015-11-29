@@ -9,27 +9,26 @@
 import UIKit
 
 class SECinemaCell: UITableViewCell {
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var  nameLabel   : UILabel!
 
-    @IBOutlet weak var adressLabel: UILabel!
+    @IBOutlet weak var  adressLabel : UILabel!
     
-    @IBOutlet weak var screenLabel: UILabel!
+    @IBOutlet weak var  screenLabel : UILabel!
     
-    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var  priceLabel  : UILabel!
     
-    @IBOutlet weak var seatLabel: UILabel!
+    @IBOutlet weak var  seatLabel   : UILabel!
   
-    @IBOutlet weak var ticketLabel: UILabel!
+    @IBOutlet weak var  ticketLabel : UILabel!
     
     var SECinemalM: SECinemaModel? {
         
         didSet {
         
-            nameLabel.text = SECinemalM?.name
+            nameLabel.text   = SECinemalM?.name
             adressLabel.text = SECinemalM?.address
             screenLabel.text = SECinemalM?.screenings
-//            if(priceLabel.text = SECinemalM?.lowPrice)
-            priceLabel.text = SECinemalM?.lowPrice
+            priceLabel.text  = SECinemalM?.lowPrice
             
             //判断是否有座
             if (SECinemalM?.isSeatSupport == "0" && SECinemalM?.isCouponSupport == "0"){

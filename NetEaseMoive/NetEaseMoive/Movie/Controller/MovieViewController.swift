@@ -16,7 +16,11 @@ class MovieViewController: UIViewController  {
     @IBOutlet weak var tableView: UITableView!
     
 
-    var movies : [SEMoiveModel] = []
+    var movies:[SEMoiveModel]? = [] {
+        didSet{
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,21 +41,15 @@ class MovieViewController: UIViewController  {
             let movieList = response.result.value
             
             if let list : [SEMoiveModel] = movieList?.movies {
-                
                 self.movies = list
-                self.tableView.reloadData()
             }
         }
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 
@@ -62,13 +60,13 @@ extension MovieViewController :UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return movies.count
+       return (movies?.count)!
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
         let cell = tableView.dequeueReusableCellWithIdentifier("SEMovieTableViewCell") as? SEMovieTableViewCell
-           cell!.configCellForModel(movies[indexPath.row])
+           cell!.configCellForModel((movies?[indexPath.row])!)
     
          return cell!
     }

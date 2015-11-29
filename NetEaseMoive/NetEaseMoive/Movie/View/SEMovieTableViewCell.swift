@@ -18,6 +18,7 @@ class SEMovieTableViewCell: UITableViewCell {
     @IBOutlet weak var screeningLabel   : UILabel!
     @IBOutlet weak var selectSeatBtn    : UIButton!
     
+    @IBOutlet weak var lineHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,10 +27,8 @@ class SEMovieTableViewCell: UITableViewCell {
 
     
     func configUI() {
-    
-        selectSeatBtn.layer.cornerRadius = 10
-        selectSeatBtn.layer.masksToBounds = true
-        selectSeatBtn.backgroundColor = UIColor(red:0.91, green:0.39, blue:0.22, alpha:1)
+        
+        lineHeight.constant = 1/UIScreen.mainScreen().scale
     }
     
     
