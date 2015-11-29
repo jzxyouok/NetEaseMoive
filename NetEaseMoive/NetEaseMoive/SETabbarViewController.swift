@@ -16,31 +16,35 @@ class SETabbarViewController: UITabBarController,UITabBarControllerDelegate{
         
         //电影
         let movieVC = MovieViewController()
-        movieVC.title = "电影"
-//      movieVC.tabBarItem = UITabBarItem(title:"电影", image: nil, selectedImage: nil)
+            movieVC.tabBarItem = settingTabbarItem("tab_movie", highlightImageName: "tab_movie_highlight")
         let movieNav = SENavViewController(rootViewController: movieVC)
     
         //剧场
         let cinemaVC = CinemaViewController()
-        cinemaVC.title = "剧场"
-//      cinemaVC.tabBarItem = UITabBarItem(title:"剧场", image: nil,   selectedImage: nil)
+            cinemaVC.tabBarItem = settingTabbarItem("tab_cinema", highlightImageName: "tab_cinema_highlight")
         let cinemaNav = SENavViewController(rootViewController: cinemaVC)
         
         //发现
         let discoveryVC = DiscoveryViewController()
-        discoveryVC.title = "发现"
-//            discoveryVC.tabBarItem = UITabBarItem(title:"发现", image: nil, selectedImage: nil)
+            discoveryVC.tabBarItem = settingTabbarItem("tab_discovery", highlightImageName: "tab_discovery_highlight")
         let discoveryNav = SENavViewController(rootViewController: discoveryVC)
         
         //设置
         let settingVC = SettingViewController()
-        settingVC.title = "我的"
-//            settingVC.tabBarItem = UITabBarItem(title:"我的", image: nil, selectedImage: nil)
+            settingVC.tabBarItem = settingTabbarItem("tab_account", highlightImageName: "tab_account_highlight")
         let settingNav = SENavViewController(rootViewController: settingVC)
     
-         self.viewControllers = [movieNav,cinemaNav,discoveryNav,settingNav]
+        self.viewControllers = [movieNav,cinemaNav,discoveryNav,settingNav]
     }
 
+    
+    func settingTabbarItem(normalImageName:String,highlightImageName:String) -> UITabBarItem {
+    
+        let item :UITabBarItem = UITabBarItem(title:nil, image:UIImage(named: normalImageName)?.imageWithRenderingMode(.AlwaysOriginal), selectedImage :UIImage(named: highlightImageName)?.imageWithRenderingMode(.AlwaysOriginal))
+        item.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0)
+        return item
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
