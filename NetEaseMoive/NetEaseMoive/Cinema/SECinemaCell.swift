@@ -28,7 +28,8 @@ class SECinemaCell: UITableViewCell {
             nameLabel.text = SECinemalM?.name
             adressLabel.text = SECinemalM?.address
             screenLabel.text = SECinemalM?.screenings
-            priceLabel.text = (SECinemalM?.lowPrice)!
+//            if(priceLabel.text = SECinemalM?.lowPrice)
+            priceLabel.text = SECinemalM?.lowPrice
             
             //判断是否有座
             if (SECinemalM?.isSeatSupport == "0" && SECinemalM?.isCouponSupport == "0"){
