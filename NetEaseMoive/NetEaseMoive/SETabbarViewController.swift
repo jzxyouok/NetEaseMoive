@@ -14,7 +14,6 @@ class SETabbarViewController: UITabBarController,UITabBarControllerDelegate{
         super.viewDidLoad()
         self.selectedIndex = 0
         
-        
         //电影
         let movieVC = MovieViewController()
         movieVC.title = "电影"

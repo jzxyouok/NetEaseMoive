@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import ObjectMapper
 import AlamofireObjectMapper
 
 class MovieViewController: UIViewController  {
@@ -71,7 +70,6 @@ extension MovieViewController :UITableViewDataSource,UITableViewDelegate {
      
            let cell = tableView.dequeueReusableCellWithIdentifier("SEMovieTableViewCell") as? SEMovieTableViewCell
            cell!.configCellForModel(movies[indexPath.row])
-        
     
          return cell!
     }
