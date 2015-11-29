@@ -24,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.makeKeyAndVisible()
         }
         
+        //UINavigationBar设置
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.orangeColor()]
+     //   UINavigationBar.appearance().barTintColor = UIColor.orangeColor()
+        
+        
         
         return true
     }
