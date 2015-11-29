@@ -60,19 +60,7 @@ class SECinemaModel:Mappable{
 
     
     
-//    /// 字典转模型
-//    
-//    init(dict: [String: AnyObject]) {
-//        
-//        super.init()
-//        
-//        setValuesForKeysWithDictionary(dict)
-//
-//    }
-//    
-//    override func setValue(value: AnyObject?, forUndefinedKey key: String) {}
-//    
-//}
+
 
 
 
