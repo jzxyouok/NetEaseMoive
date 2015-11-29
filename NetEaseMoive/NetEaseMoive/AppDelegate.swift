@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //UINavigationBar设置
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.orangeColor()]
-        UINavigationBar.appearance().tintColor = SEUIConfigCenter.sharedCenter.appFontDefaultColor        
+        UINavigationBar.appearance().tintColor = SEUIConfigCenter.sharedCenter.appNavFontColor
         
         
         return true

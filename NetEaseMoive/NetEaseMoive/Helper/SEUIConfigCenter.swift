@@ -11,7 +11,11 @@ import UIKit
 
 class SEUIConfigCenter {
     
-    let appFontDefaultColor = UIColor(red:0.9, green:0.44, blue:0.23, alpha:1)
+    //默认主题色
+    let appColor = UIColor(red:0.9, green:0.44, blue:0.23, alpha:1)
+    
+    //默认导航栏字体颜色
+    let appNavFontColor = UIColor(red:0.2, green:0.2, blue:0.2, alpha:1)
     
     class var sharedCenter : SEUIConfigCenter {
         struct Static {

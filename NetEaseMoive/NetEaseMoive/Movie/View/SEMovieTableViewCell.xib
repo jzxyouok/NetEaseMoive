@@ -80,6 +80,13 @@
                                     <constraint firstAttribute="height" constant="30" id="svl-DT-yru"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playButton" translatesAutoresizingMaskIntoConstraints="NO" id="wQl-DI-BUS" userLabel="playImage">
+                                <rect key="frame" x="3" y="86" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Cgh-XK-O3p"/>
+                                    <constraint firstAttribute="width" constant="20" id="onv-df-flo"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -97,7 +104,9 @@
                             <constraint firstItem="4dr-o5-cGJ" firstAttribute="top" secondItem="TTE-gM-e5J" secondAttribute="bottom" constant="13" id="gyK-dA-JLU"/>
                             <constraint firstItem="zai-FO-eH0" firstAttribute="baseline" secondItem="TTE-gM-e5J" secondAttribute="baseline" id="kjQ-Cz-hne"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4dr-o5-cGJ" secondAttribute="trailing" constant="10" id="omI-Q6-S3I"/>
+                            <constraint firstAttribute="bottom" secondItem="wQl-DI-BUS" secondAttribute="bottom" constant="3" id="pi3-uy-haz"/>
                             <constraint firstItem="TJ1-Qg-wOG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pwA-xQ-jwN" secondAttribute="trailing" constant="10" id="q7a-dG-Tbi"/>
+                            <constraint firstItem="wQl-DI-BUS" firstAttribute="leading" secondItem="pc0-zj-ETC" secondAttribute="leading" constant="3" id="qpl-oS-GCT"/>
                             <constraint firstItem="ris-nE-Xzn" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" id="uVq-Fo-NYs"/>
                             <constraint firstItem="pwA-xQ-jwN" firstAttribute="leading" secondItem="TTE-gM-e5J" secondAttribute="leading" id="ubY-wI-FGq"/>
                             <constraint firstItem="UxB-XQ-Xmd" firstAttribute="baseline" secondItem="TTE-gM-e5J" secondAttribute="baseline" id="xZz-ji-bB5"/>
@@ -132,5 +141,6 @@
     <resources>
         <image name="movieNew" width="25" height="14"/>
         <image name="orangeLittleRoundButtonBack" width="76" height="25"/>
+        <image name="playButton" width="45" height="45"/>
     </resources>
 </document>

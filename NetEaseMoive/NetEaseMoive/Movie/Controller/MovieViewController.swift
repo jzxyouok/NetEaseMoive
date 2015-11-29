@@ -57,7 +57,7 @@ class MovieViewController: UIViewController  {
         runkeeperSwitch.backgroundColor = UIColor(red: 239.0/255.0, green: 95.0/255.0, blue: 49.0/255.0, alpha: 1.0)
         runkeeperSwitch.selectedBackgroundColor = .whiteColor()
         runkeeperSwitch.titleColor = .whiteColor()
-        runkeeperSwitch.selectedTitleColor = SEUIConfigCenter.sharedCenter.appFontDefaultColor
+        runkeeperSwitch.selectedTitleColor = SEUIConfigCenter.sharedCenter.appColor
         runkeeperSwitch.titleFont = UIFont(name: "HelveticaNeue-Medium", size: 13.0)
         runkeeperSwitch.frame = CGRect(x: 30.0, y: 40.0, width: 100.0, height: 30.0)
         runkeeperSwitch.addTarget(self, action: Selector("userTapLocAction"), forControlEvents: .ValueChanged)
@@ -69,10 +69,11 @@ class MovieViewController: UIViewController  {
         navigationItem.leftBarButtonItem = locItem
         
         //设置右边两个Item
+        
         let switchScrollMoiveItem = UIBarButtonItem(image:UIImage(named: "navi_pan"), style:.Plain, target: self, action: Selector("userTapLocAction"))
         let searchItem = UIBarButtonItem(image:UIImage(named: "navi_search"), style:.Plain, target: self, action: Selector("userTapLocAction"))
         
-        navigationItem.rightBarButtonItems = [switchScrollMoiveItem,searchItem]
+        navigationItem.rightBarButtonItems = [searchItem,switchScrollMoiveItem]
         
         //设置tableView
         tableView.backgroundColor = UIColor.whiteColor()
