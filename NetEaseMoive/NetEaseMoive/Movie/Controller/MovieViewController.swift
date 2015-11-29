@@ -57,7 +57,7 @@ class MovieViewController: UIViewController  {
         runkeeperSwitch.backgroundColor = UIColor(red: 239.0/255.0, green: 95.0/255.0, blue: 49.0/255.0, alpha: 1.0)
         runkeeperSwitch.selectedBackgroundColor = .whiteColor()
         runkeeperSwitch.titleColor = .whiteColor()
-        runkeeperSwitch.selectedTitleColor = UIColor(red: 239.0/255.0, green: 95.0/255.0, blue: 49.0/255.0, alpha: 1.0)
+        runkeeperSwitch.selectedTitleColor = SEUIConfigCenter.sharedCenter.appFontDefaultColor
         runkeeperSwitch.titleFont = UIFont(name: "HelveticaNeue-Medium", size: 13.0)
         runkeeperSwitch.frame = CGRect(x: 30.0, y: 40.0, width: 100.0, height: 30.0)
         runkeeperSwitch.addTarget(self, action: Selector("userTapLocAction"), forControlEvents: .ValueChanged)
