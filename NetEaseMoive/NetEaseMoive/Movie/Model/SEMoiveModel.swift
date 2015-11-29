@@ -10,6 +10,9 @@
 import UIKit
 import ObjectMapper
 
+
+
+
 class SEMoiveModel: Mappable {
 
     //电影Id
@@ -42,6 +45,18 @@ class SEMoiveModel: Mappable {
     //影院播放场次  eg:"今天120家影院放映1405场"
     var screening : String?
     
+    //是否销售中
+    var isSale :String?
+    
+    
+    enum SEMovieType: String {
+        case SEMovieType2D       = "2D"
+        case SEMovieType2DIMax   = "2D,IMAX"
+        case SEMovieType3D       = "3D"
+        case SEMovieType3DIMax   = "3D,IMAX"
+        case SEMovieType2D3DIMax = "2D,3D,IMAX"
+    }
+    
     required init?(_ map: Map) {
         
     }
@@ -49,7 +64,7 @@ class SEMoiveModel: Mappable {
     func mapping(map: Map) {
         movieId         <- map["id"]
         name            <- map["name"]
-        isNew           <- map["isnew"]
+        isNew           <- map["isNew"]
         highlight       <- map["highlight"]
         grade           <- map["grade"]
         logoUrl         <- map["logo520692"]
@@ -57,6 +72,28 @@ class SEMoiveModel: Mappable {
         releaseDate     <- map["releasedate"]
         duration        <- map["duration"]
         screening       <- map["screenings"]
+        isSale          <- map["isSale"]
+    }
+    
+    
+    func markImageNameForMovieType() -> String? {
+    
+          if let movieMarkName = SEMovieType(rawValue: self.dimensional!) {
+            
+            switch movieMarkName {
+            
+            case .SEMovieType2D :
+                return .None
+            case .SEMovieType2DIMax :
+                return "mark_iMax&2dBelt"
+            case .SEMovieType3D :
+                return "mark_3dBelt"
+            case .SEMovieType3DIMax ,.SEMovieType2D3DIMax :
+                return "mark_iMax&3dBelt"
+            }
+          } else {
+            return .None
+        }
     }
 }
 

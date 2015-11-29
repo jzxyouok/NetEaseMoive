@@ -17,7 +17,8 @@ class SEMovieTableViewCell: UITableViewCell {
     @IBOutlet weak var subTitleLabel    : UILabel!
     @IBOutlet weak var screeningLabel   : UILabel!
     @IBOutlet weak var selectSeatBtn    : UIButton!
-    
+    @IBOutlet weak var markImageView    : UIImageView!
+    @IBOutlet weak var titleImageView   : UIImageView!
     @IBOutlet weak var lineHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
@@ -38,9 +39,30 @@ class SEMovieTableViewCell: UITableViewCell {
         gradeLabel.text     = model.grade
         screeningLabel.text = model.screening
         
-        if (model.logoUrl != nil) {
-            logoImage.kf_setImageWithURL(NSURL(string: model.logoUrl!)!, placeholderImage: nil)
+        //配置Logo
+        if let imageUrl :String = model.logoUrl {
+            logoImage.kf_setImageWithURL(NSURL(string: imageUrl)!, placeholderImage: nil)
         }
+        
+        //配置电影类型
+        if let imageName :String = model.markImageNameForMovieType() {
+            markImageView.hidden = false
+            markImageView.image = UIImage(named: imageName)
+        }else {
+            markImageView.hidden = true
+        }
+        
+        //配置标题Mark
+        if(model.isNew == "1") {
+            titleImageView.hidden = false
+            titleImageView.image = UIImage(named: "movieNew")
+        } else if (model.isSale == "1") {
+            titleImageView.hidden = false
+            titleImageView.image = UIImage(named: "movieSale")
+        } else {
+            titleImageView.hidden = true
+        }
+        
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

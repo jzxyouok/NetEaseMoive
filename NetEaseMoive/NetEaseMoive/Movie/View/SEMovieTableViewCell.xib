@@ -66,24 +66,41 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieNew" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-XQ-Xmd" userLabel="titleMarkImage">
+                                <rect key="frame" x="160" y="13" width="25" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="oEN-HI-bHE"/>
+                                    <constraint firstAttribute="width" constant="25" id="r94-Xx-k68"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ris-nE-Xzn" userLabel="MarkImage">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="KE5-Vj-yDA"/>
+                                    <constraint firstAttribute="height" constant="30" id="svl-DT-yru"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zai-FO-eH0" secondAttribute="trailing" id="2TA-J8-TYb"/>
                             <constraint firstItem="4dr-o5-cGJ" firstAttribute="leading" secondItem="TTE-gM-e5J" secondAttribute="leading" id="3Ur-M0-Xhv"/>
+                            <constraint firstItem="UxB-XQ-Xmd" firstAttribute="leading" secondItem="TTE-gM-e5J" secondAttribute="trailing" constant="5" id="8Rj-eN-vus"/>
                             <constraint firstAttribute="trailing" secondItem="TJ1-Qg-wOG" secondAttribute="trailing" id="C5q-rK-KgH"/>
                             <constraint firstItem="nnJ-aL-PcU" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" id="C9v-Hp-Xxy"/>
                             <constraint firstItem="nnJ-aL-PcU" firstAttribute="leading" secondItem="pc0-zj-ETC" secondAttribute="leading" id="CL0-nc-WOb"/>
                             <constraint firstAttribute="bottom" secondItem="nnJ-aL-PcU" secondAttribute="bottom" id="HD1-lD-ijw"/>
                             <constraint firstItem="pwA-xQ-jwN" firstAttribute="top" secondItem="4dr-o5-cGJ" secondAttribute="bottom" constant="10" id="Pov-cq-r7F"/>
-                            <constraint firstItem="zai-FO-eH0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="TTE-gM-e5J" secondAttribute="trailing" constant="292" id="T1L-Ro-AHz"/>
                             <constraint firstItem="TTE-gM-e5J" firstAttribute="leading" secondItem="nnJ-aL-PcU" secondAttribute="trailing" constant="10" id="bbV-Rd-dpM"/>
+                            <constraint firstItem="ris-nE-Xzn" firstAttribute="leading" secondItem="pc0-zj-ETC" secondAttribute="leading" id="dWn-Ms-nCU"/>
                             <constraint firstAttribute="bottom" secondItem="TJ1-Qg-wOG" secondAttribute="bottom" id="fqs-Aj-DZb"/>
                             <constraint firstItem="4dr-o5-cGJ" firstAttribute="top" secondItem="TTE-gM-e5J" secondAttribute="bottom" constant="13" id="gyK-dA-JLU"/>
                             <constraint firstItem="zai-FO-eH0" firstAttribute="baseline" secondItem="TTE-gM-e5J" secondAttribute="baseline" id="kjQ-Cz-hne"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4dr-o5-cGJ" secondAttribute="trailing" constant="10" id="omI-Q6-S3I"/>
                             <constraint firstItem="TJ1-Qg-wOG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pwA-xQ-jwN" secondAttribute="trailing" constant="10" id="q7a-dG-Tbi"/>
+                            <constraint firstItem="ris-nE-Xzn" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" id="uVq-Fo-NYs"/>
                             <constraint firstItem="pwA-xQ-jwN" firstAttribute="leading" secondItem="TTE-gM-e5J" secondAttribute="leading" id="ubY-wI-FGq"/>
+                            <constraint firstItem="UxB-XQ-Xmd" firstAttribute="baseline" secondItem="TTE-gM-e5J" secondAttribute="baseline" id="xZz-ji-bB5"/>
                             <constraint firstItem="TTE-gM-e5J" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" constant="10" id="zZP-97-f4i"/>
                         </constraints>
                     </view>
@@ -102,15 +119,18 @@
                 <outlet property="gradeLabel" destination="zai-FO-eH0" id="4CH-jm-a9A"/>
                 <outlet property="lineHeight" destination="Q4k-xd-iem" id="Pak-z3-1Yn"/>
                 <outlet property="logoImage" destination="nnJ-aL-PcU" id="Fl9-jE-xvf"/>
+                <outlet property="markImageView" destination="ris-nE-Xzn" id="WB3-cc-IC9"/>
                 <outlet property="screeningLabel" destination="pwA-xQ-jwN" id="3gn-l6-skO"/>
                 <outlet property="selectSeatBtn" destination="TJ1-Qg-wOG" id="PPR-JE-PJu"/>
                 <outlet property="subTitleLabel" destination="4dr-o5-cGJ" id="BPf-2G-xCp"/>
+                <outlet property="titleImageView" destination="UxB-XQ-Xmd" id="f9O-Pf-It6"/>
                 <outlet property="titleLabel" destination="TTE-gM-e5J" id="3Cm-Lc-eVK"/>
             </connections>
             <point key="canvasLocation" x="431.5" y="116"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="movieNew" width="25" height="14"/>
         <image name="orangeLittleRoundButtonBack" width="76" height="25"/>
     </resources>
 </document>
