@@ -24,9 +24,10 @@
 		D929E3CF1C09EB9D00B43B82 /* SETabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3CE1C09EB9D00B43B82 /* SETabbarViewController.swift */; };
 		D929E3D21C09ED8A00B43B82 /* SENavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3D11C09ED8A00B43B82 /* SENavViewController.swift */; };
 		D929E3D41C0A010F00B43B82 /* SEMoiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3D31C0A010F00B43B82 /* SEMoiveModel.swift */; };
-		D929E3DA1C0A127C00B43B82 /* NSObject+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929E3D91C0A127C00B43B82 /* NSObject+Extention.swift */; };
 		D93FE2041C0A3A84005A1972 /* SEMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FE2021C0A3A84005A1972 /* SEMovieTableViewCell.swift */; };
 		D93FE2051C0A3A84005A1972 /* SEMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93FE2031C0A3A84005A1972 /* SEMovieTableViewCell.xib */; };
+		D950C81B1C0A9F0F00FB2944 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D950C8181C0A9F0F00FB2944 /* Info.plist */; };
+		D950C81C1C0A9F0F00FB2944 /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950C81A1C0A9F0F00FB2944 /* SwiftColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +51,11 @@
 		D929E3CE1C09EB9D00B43B82 /* SETabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SETabbarViewController.swift; sourceTree = "<group>"; };
 		D929E3D11C09ED8A00B43B82 /* SENavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SENavViewController.swift; sourceTree = "<group>"; };
 		D929E3D31C0A010F00B43B82 /* SEMoiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEMoiveModel.swift; sourceTree = "<group>"; };
-		D929E3D91C0A127C00B43B82 /* NSObject+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extention.swift"; sourceTree = "<group>"; };
 		D93FE2021C0A3A84005A1972 /* SEMovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEMovieTableViewCell.swift; sourceTree = "<group>"; };
 		D93FE2031C0A3A84005A1972 /* SEMovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SEMovieTableViewCell.xib; sourceTree = "<group>"; };
+		D950C8181C0A9F0F00FB2944 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D950C8191C0A9F0F00FB2944 /* SwiftColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftColors.h; sourceTree = "<group>"; };
+		D950C81A1C0A9F0F00FB2944 /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
 		D96DC5601C0A157C00569369 /* NetEaseMoive-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetEaseMoive-Bridging-Header.h"; sourceTree = "<group>"; };
 		FBDDCCC3B7EC21D55E8B2E91 /* Pods-NetEaseMoive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetEaseMoive.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetEaseMoive/Pods-NetEaseMoive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,8 +197,8 @@
 		D929E3B41C09E9F400B43B82 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D950C8171C0A9F0F00FB2944 /* SwiftColors */,
 				D96DC5601C0A157C00569369 /* NetEaseMoive-Bridging-Header.h */,
-				D929E3D91C0A127C00B43B82 /* NSObject+Extention.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -284,6 +287,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		D950C8171C0A9F0F00FB2944 /* SwiftColors */ = {
+			isa = PBXGroup;
+			children = (
+				D950C8181C0A9F0F00FB2944 /* Info.plist */,
+				D950C8191C0A9F0F00FB2944 /* SwiftColors.h */,
+				D950C81A1C0A9F0F00FB2944 /* SwiftColors.swift */,
+			);
+			path = SwiftColors;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D929E3CD1C09EAB300B43B82 /* SettingViewController.xib in Resources */,
+				D950C81B1C0A9F0F00FB2944 /* Info.plist in Resources */,
 				D929E3C11C09EA6600B43B82 /* CinemaViewController.xib in Resources */,
 				1CB73B801C0A135600BEC758 /* SECinemaCell.xib in Resources */,
 				D90721F21C09D92E0091170A /* Assets.xcassets in Resources */,
@@ -410,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D929E3DA1C0A127C00B43B82 /* NSObject+Extention.swift in Sources */,
+				D950C81C1C0A9F0F00FB2944 /* SwiftColors.swift in Sources */,
 				D929E3CC1C09EAB300B43B82 /* SettingViewController.swift in Sources */,
 				1CB73B7F1C0A135600BEC758 /* SECinemaCell.swift in Sources */,
 				D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */,

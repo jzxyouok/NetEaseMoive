@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import ObjectMapper
 import AlamofireObjectMapper
 
 class MovieViewController: UIViewController  {
@@ -22,8 +21,7 @@ class MovieViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        tableView.backgroundColor = UIColor.blackColor()
+        tableView.backgroundColor = UIColor.whiteColor()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .None
@@ -69,9 +67,8 @@ extension MovieViewController :UITableViewDataSource,UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
      
-           let cell = tableView.dequeueReusableCellWithIdentifier("SEMovieTableViewCell") as? SEMovieTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SEMovieTableViewCell") as? SEMovieTableViewCell
            cell!.configCellForModel(movies[indexPath.row])
-        
     
          return cell!
     }
