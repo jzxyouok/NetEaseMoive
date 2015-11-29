@@ -36,7 +36,11 @@ class SEMovieTableViewCell: UITableViewCell {
     func configCellForModel(model: SEMoiveModel) {
         titleLabel.text     = model.name
         subTitleLabel.text  = model.highlight
-        gradeLabel.text     = model.grade
+        
+        if let gradeText = model.grade {
+            gradeLabel.text = gradeText + "分"
+        }
+        
         screeningLabel.text = model.screening
         
         //配置Logo

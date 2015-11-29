@@ -32,25 +32,25 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火星救援" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTE-gM-e5J" userLabel="titleLabel">
-                                <rect key="frame" x="83" y="10" width="72" height="22"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="83" y="8" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.10788659006357193" green="0.097788453102111816" blue="0.083137623965740204" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zai-FO-eH0" userLabel="gradeLabel">
-                                <rect key="frame" x="443" y="11" width="42" height="21"/>
+                                <rect key="frame" x="443" y="8" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.89803921568627454" green="0.36078431372549019" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dr-o5-cGJ" userLabel="subTitleLabel">
-                                <rect key="frame" x="83" y="45" width="33" height="16"/>
+                                <rect key="frame" x="83" y="42" width="33" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.5725490196078431" green="0.5725490196078431" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwA-xQ-jwN" userLabel="screeningLabel">
-                                <rect key="frame" x="83" y="71" width="31" height="15"/>
+                                <rect key="frame" x="83" y="68" width="31" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieNew" translatesAutoresizingMaskIntoConstraints="NO" id="UxB-XQ-Xmd" userLabel="titleMarkImage">
-                                <rect key="frame" x="160" y="13" width="25" height="14"/>
+                                <rect key="frame" x="156" y="10" width="25" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="oEN-HI-bHE"/>
                                     <constraint firstAttribute="width" constant="25" id="r94-Xx-k68"/>
@@ -101,7 +101,7 @@
                             <constraint firstItem="ris-nE-Xzn" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" id="uVq-Fo-NYs"/>
                             <constraint firstItem="pwA-xQ-jwN" firstAttribute="leading" secondItem="TTE-gM-e5J" secondAttribute="leading" id="ubY-wI-FGq"/>
                             <constraint firstItem="UxB-XQ-Xmd" firstAttribute="baseline" secondItem="TTE-gM-e5J" secondAttribute="baseline" id="xZz-ji-bB5"/>
-                            <constraint firstItem="TTE-gM-e5J" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" constant="10" id="zZP-97-f4i"/>
+                            <constraint firstItem="TTE-gM-e5J" firstAttribute="top" secondItem="pc0-zj-ETC" secondAttribute="top" constant="8" id="zZP-97-f4i"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -126,7 +126,7 @@
                 <outlet property="titleImageView" destination="UxB-XQ-Xmd" id="f9O-Pf-It6"/>
                 <outlet property="titleLabel" destination="TTE-gM-e5J" id="3Cm-Lc-eVK"/>
             </connections>
-            <point key="canvasLocation" x="431.5" y="116"/>
+            <point key="canvasLocation" x="332.5" y="111"/>
         </tableViewCell>
     </objects>
     <resources>
