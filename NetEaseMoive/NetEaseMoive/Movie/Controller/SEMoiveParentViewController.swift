@@ -65,7 +65,7 @@ class SEMoiveParentViewController: UIViewController {
                 },completion: nil)
         }else {
             isChangeSwipe = false
-            self.transitionFromViewController(swipeMovieVC, toViewController: normalMovieVC, duration: 1.0, options:.TransitionFlipFromLeft, animations:{
+            self.transitionFromViewController(swipeMovieVC, toViewController: normalMovieVC, duration: 1.0, options:.TransitionFlipFromRight, animations:{
                 
                 },completion:nil)
         
