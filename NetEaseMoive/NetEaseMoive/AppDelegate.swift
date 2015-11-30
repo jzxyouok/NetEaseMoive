@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         if let window = self.window {
+            window.backgroundColor = UIColor.whiteColor()
             window.rootViewController = self.tabbarController
             window.makeKeyAndVisible()
         }
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UINavigationBar设置
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.orangeColor()]
         UINavigationBar.appearance().tintColor = SEUIConfigCenter.sharedCenter.appNavFontColor
+        
         
         
         return true

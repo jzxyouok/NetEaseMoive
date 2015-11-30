@@ -28,8 +28,8 @@
 		D93FE2051C0A3A84005A1972 /* SEMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93FE2031C0A3A84005A1972 /* SEMovieTableViewCell.xib */; };
 		D950C81B1C0A9F0F00FB2944 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D950C8181C0A9F0F00FB2944 /* Info.plist */; };
 		D950C81C1C0A9F0F00FB2944 /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950C81A1C0A9F0F00FB2944 /* SwiftColors.swift */; };
-		D99F47EF1C0B1D7C00671F0C /* DGRunkeeperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F47EE1C0B1D7C00671F0C /* DGRunkeeperSwitch.swift */; };
 		D99F47F11C0B239600671F0C /* SEUIConfigCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F47F01C0B239600671F0C /* SEUIConfigCenter.swift */; };
+		D9A7584B1C0CA72400ED4DD5 /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7584A1C0CA72400ED4DD5 /* YSSegmentedControl.swift */; };
 		D9D95A4B1C0B49260094B352 /* SESwipeMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D95A491C0B49260094B352 /* SESwipeMovieViewController.swift */; };
 		D9D95A4C1C0B49260094B352 /* SESwipeMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D95A4A1C0B49260094B352 /* SESwipeMovieViewController.xib */; };
 		D9D95A4F1C0B54840094B352 /* SEMoiveParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D95A4D1C0B54840094B352 /* SEMoiveParentViewController.swift */; };
@@ -63,8 +63,8 @@
 		D950C8191C0A9F0F00FB2944 /* SwiftColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftColors.h; sourceTree = "<group>"; };
 		D950C81A1C0A9F0F00FB2944 /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
 		D96DC5601C0A157C00569369 /* NetEaseMoive-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetEaseMoive-Bridging-Header.h"; sourceTree = "<group>"; };
-		D99F47EE1C0B1D7C00671F0C /* DGRunkeeperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRunkeeperSwitch.swift; sourceTree = "<group>"; };
 		D99F47F01C0B239600671F0C /* SEUIConfigCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEUIConfigCenter.swift; sourceTree = "<group>"; };
+		D9A7584A1C0CA72400ED4DD5 /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
 		D9D95A491C0B49260094B352 /* SESwipeMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SESwipeMovieViewController.swift; sourceTree = "<group>"; };
 		D9D95A4A1C0B49260094B352 /* SESwipeMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SESwipeMovieViewController.xib; sourceTree = "<group>"; };
 		D9D95A4D1C0B54840094B352 /* SEMoiveParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEMoiveParentViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +209,7 @@
 		D929E3B41C09E9F400B43B82 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D9A7584A1C0CA72400ED4DD5 /* YSSegmentedControl.swift */,
 				D950C8171C0A9F0F00FB2944 /* SwiftColors */,
 				D96DC5601C0A157C00569369 /* NetEaseMoive-Bridging-Header.h */,
 				D99F47F01C0B239600671F0C /* SEUIConfigCenter.swift */,
@@ -292,7 +293,6 @@
 		D929E3BD1C09E9F400B43B82 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				D99F47ED1C0B1D7C00671F0C /* DGRunkeeperSwitch */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -313,14 +313,6 @@
 				D950C81A1C0A9F0F00FB2944 /* SwiftColors.swift */,
 			);
 			path = SwiftColors;
-			sourceTree = "<group>";
-		};
-		D99F47ED1C0B1D7C00671F0C /* DGRunkeeperSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				D99F47EE1C0B1D7C00671F0C /* DGRunkeeperSwitch.swift */,
-			);
-			path = DGRunkeeperSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,7 +449,6 @@
 				D929E3CC1C09EAB300B43B82 /* SettingViewController.swift in Sources */,
 				1CB73B7F1C0A135600BEC758 /* SECinemaCell.swift in Sources */,
 				D90721EB1C09D92E0091170A /* AppDelegate.swift in Sources */,
-				D99F47EF1C0B1D7C00671F0C /* DGRunkeeperSwitch.swift in Sources */,
 				D929E3CF1C09EB9D00B43B82 /* SETabbarViewController.swift in Sources */,
 				D99F47F11C0B239600671F0C /* SEUIConfigCenter.swift in Sources */,
 				D9D95A4F1C0B54840094B352 /* SEMoiveParentViewController.swift in Sources */,
@@ -466,6 +457,7 @@
 				D9D95A4B1C0B49260094B352 /* SESwipeMovieViewController.swift in Sources */,
 				D929E3C01C09EA6600B43B82 /* CinemaViewController.swift in Sources */,
 				D929E3C81C09EA9F00B43B82 /* MovieViewController.swift in Sources */,
+				D9A7584B1C0CA72400ED4DD5 /* YSSegmentedControl.swift in Sources */,
 				D929E3D41C0A010F00B43B82 /* SEMoiveModel.swift in Sources */,
 				D93FE2041C0A3A84005A1972 /* SEMovieTableViewCell.swift in Sources */,
 				D929E3D21C09ED8A00B43B82 /* SENavViewController.swift in Sources */,

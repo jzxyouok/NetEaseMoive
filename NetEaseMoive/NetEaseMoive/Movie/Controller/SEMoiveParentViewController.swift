@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SEMoiveParentViewController: UIViewController {
+class SEMoiveParentViewController: UIViewController, YSSegmentedControlDelegate {
 
     let normalMovieVC = MovieViewController()
     let swipeMovieVC = SESwipeMovieViewController()
@@ -18,25 +18,33 @@ class SEMoiveParentViewController: UIViewController {
         super.viewDidLoad()
         
        
-        
+        self.view.backgroundColor = UIColor.whiteColor()
         self.addChildViewController(normalMovieVC)
         self.view.addSubview(normalMovieVC.view)
         self.addChildViewController(swipeMovieVC)
         
-        //设置导航栏  *_* 有空自己写个哈
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        self.navigationController?.view.backgroundColor = UIColor.whiteColor()
+        
+        //设置导航栏
         //设置中间titleView
-        let runkeeperSwitch = DGRunkeeperSwitch(leftTitle: "热映", rightTitle: "预告")
-        runkeeperSwitch.backgroundColor = UIColor(red: 239.0/255.0, green: 95.0/255.0, blue: 49.0/255.0, alpha: 1.0)
-        runkeeperSwitch.selectedBackgroundColor = .whiteColor()
-        runkeeperSwitch.titleColor = .whiteColor()
-        runkeeperSwitch.selectedTitleColor = SEUIConfigCenter.sharedCenter.appColor
-        runkeeperSwitch.titleFont = UIFont(name: "HelveticaNeue-Medium", size: 13.0)
-        runkeeperSwitch.frame = CGRect(x: 30.0, y: 40.0, width: 100.0, height: 30.0)
-        runkeeperSwitch.addTarget(self, action: Selector("userTapLocAction"), forControlEvents: .ValueChanged)
-        navigationItem.titleView = runkeeperSwitch
         
-        
+        let segmented = YSSegmentedControl(
+            frame: CGRect(
+                x: 0,
+                y: 0,
+                width: 100,
+                height: 44),
+            titles: [
+                "热映",
+                "预告"
+            ],
+            action: {
+                control, index in
+                print ("segmented did pressed \(index)")
+        })
+        segmented.delegate = self
+        navigationItem.titleView = segmented
+    
         //设置左边定位Item
         let locItem = UIBarButtonItem(title:"定位", style:.Plain, target: self, action:Selector("userTapLocAction"))
         navigationItem.leftBarButtonItem = locItem
@@ -70,9 +78,6 @@ class SEMoiveParentViewController: UIViewController {
                 },completion:nil)
         
         }
-        
-       
-        
         
     }
 
